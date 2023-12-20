@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.detectgas">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,8 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DetectGas"
         tools:targetApi="31">
-
-        <!-- Khai báo activity mặc định của ứng dụng -->
+        <activity
+            android:name=".HienThiCaiDat"
+            android:exported="false" />
+        <activity
+            android:name=".SetUp_Rau"
+            android:exported="false" /> <!-- Khai báo activity mặc định của ứng dụng -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -25,7 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
     </application>
+
 </manifest>
